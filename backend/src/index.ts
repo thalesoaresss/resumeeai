@@ -5,7 +5,7 @@ import express, { Request, Response } from "express"
 import { getTranscript } from "./utils/getTranscript"
 import { split } from "./utils/split"
 import { summarizer } from "./utils/summarizer"
-dotenv.config()
+require('dotenv').config();
 
 const app = express()
 const port = process.env.PORT || 5000

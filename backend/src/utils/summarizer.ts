@@ -1,6 +1,7 @@
 import OpenAI from "openai";
+require('dotenv').config();
 const openai = new OpenAI({
-  apiKey: "",
+  apiKey: process.env.OPENAI_API_KEY,
   baseURL: "https://api.openai.com/v1",
 });
 
